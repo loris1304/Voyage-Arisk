@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Voyages ARISK</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<div id="logo">
+				<img src="assets/img/logo_var.png">
+				<p>Avoir confiance !</p>
+			</div>
+			<h1>Voyages ARISK</h1>
+		</header>
+									<!-- Navigation -->
+		<nav>
+			<ul>
+				<li><a href="index.html">ACCUEIL</a> </li>
+				<li><a href="destinations.html">DESTINATION</a> </li>
+				<li><a href="prix.html">PRIX</a> </li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+<!------------------------------------------------------------------------------------------------->
+
+		<div id="logo_titre">
+			<img src="assets/img/ico_paper.png">
+			<h1>CONTACT</h1>
+		</div>
+		<form method="post" action="send:php">
+			<label for="Nom">Nom</label>
+			<input type="Nom" id="Nom" name="Nom" placeholder="Nom" />
+
+			<label for="e-mail">E-mail</label>
+			<input type="e-mail" id="e-mail" name="e-mail" placeholder="e-mail" />
+
+			<label for="catégorie">Catégorie ?</label>
+			<select id="catégorie" name="catégorie">
+				<optgroup label="Question">
+					<option value="japon">Japon</option>
+					<option value="russie">Russie</option>
+					<option value="islande">Islande</option>
+					<option value="canada">Canada</option>
+				</optgroup>
+				<optgroup label="Reservation">
+					<option value="Reservation">Reservation</option>
+					<option value="Questions">Questions</option>
+				</optgroup>
+			</select>
+
+			<label for="Message">Message</label>
+			<textarea name="Message" id="Message" placeholder="  Entrez votre message" rows="10" cols="40"></textarea>
+		</form>
+								<!-- Bouton -->
+		<div id="submit">
+			<form method="post" action="action_page.php">
+				<input type="submit" value="Envoyer !" />
+			</form>
+		</div>
+<!------------------------------------------------------------------------------------------------------>
+
+		<footer>
+			<h1>LES DESTINATION POPULAIRES</h1>
+			<div id="destination">
+				<a href="assets/img/img1.jpg">
+					<img src="assets/img/img1.jpg" alt="" title="Cliquer pour agrandir l'image" />
+				</a>
+				<a href="assets/img/img2.jpg">
+					<img src="assets/img/img2.jpg" alt="" title="Cliquer pour agrandir l'image" />
+				</a>
+				<a href="assets/img/img3.jpg">
+					<img src="assets/img/img3.jpg" alt="" title="Cliquer pour agrandir l'image" />
+					<a href="assets/img/img4.jpg">
+						<img src="assets/img/img4.jpg" alt="" title="Cliquer pour agrandir l'image" />
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
